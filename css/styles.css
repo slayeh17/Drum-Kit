@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background: url(../images/stage.jpg);
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.keys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.key {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    width: 130px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.07s ease;
+}
+
+.playing {
+    transform: scale(1.1);
+    border: 3px solid rgb(255, 255, 2);
+    box-shadow: 0 0 5rem rgb(255, 255, 2);
+    background-color: rgba(0,0,0,0.7);
+}
+
+kbd {
+    color: yellow;
+}
